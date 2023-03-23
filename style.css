@@ -203,6 +203,9 @@ header {
 }
 
 @media screen and (min-width: 1440px) {
+    .header {
+    width: 1440px;
+    }
   .header-menu-list {
     column-gap: 50px;
   }
