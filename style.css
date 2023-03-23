@@ -196,12 +196,10 @@ header {
   .header-menu-list {
     column-gap: 44px;
   }
-
   .header-menu-item {
     font-size: 48px;
   }
 }
-
 @media screen and (min-width: 1440px) {
     .header {
     width: 1440px;
