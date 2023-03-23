@@ -157,18 +157,25 @@ header {
   }
   .header-menu-list {
     column-gap: 10px;
-      flex-direction: row;
+    flex-direction: row;
   }
   .header-menu-item {
     font-size: 30px;
   }
   .header-menu-link {
-    padding: 40px 12px;
+    padding: 12px 12px;
   }
 }
 @media screen and (min-width: 896px) {
   .header {
     min-width: 1024px;
+  }
+  .header-menu-list {
+    column-gap: 36px;
+  }
+
+  .header-menu-item {
+    font-size: 48px;
   }
 }
 
@@ -180,10 +187,10 @@ header {
     width: 320x;
   }
   .header-menu-list {
-    column-gap: 24px;
+    column-gap: 40px;
   }
   .header-menu-item {
-    font-size: 40px;
+    font-size: 52px;
   }
   .header-menu-link {
     padding: 40px 12px;
@@ -194,10 +201,10 @@ header {
     min-width: 1440px;
   }
   .header-menu-list {
-    column-gap: 44px;
+    column-gap: 56px;
   }
   .header-menu-item {
-    font-size: 48px;
+    font-size: 60px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -205,10 +212,10 @@ header {
     width: 1440px;
     }
   .header-menu-list {
-    column-gap: 50px;
+    column-gap: 60px;
   }
   .header-menu-item {
-    font-size: 56px;
+    font-size: 64px;
   }
 }
 
