@@ -54,10 +54,8 @@ a {
 }
 
 /*  !  ------------HEDER --------------*/
-header {
-  min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  width: 320px;
 }
 .header-wrapper {
   display: flex;
@@ -90,7 +88,7 @@ header {
 
 }
 .header-menu-item {
-  font-size: 52px;
+  font-size: 48px;
   text-transform: uppercase;
   font-family: 'Luckiest Guy', cursive;
 }
@@ -116,35 +114,35 @@ header {
 
 @media screen and (min-width: 375px) {
   
-  .header {
-    min-width: 424px;
+  .container {
+    min-width: 374px;
   }
 }
 
 @media screen and (min-width: 425px) {
 
-  .header {
-    min-width: 539px;
+  .container{
+    min-width: 424px;
   }
 }
 @media screen and (min-width: 540px) {
 
-  .header {
-    min-width: 651px;
+  .container {
+    min-width: 539px;
   }
 }
 
 @media screen and (min-width: 652px) {
 
-  .header {
-    min-width: 767px;
+  .container {
+    min-width: 651px;
   }
 }
 
 @media screen and (min-width: 768px) {
 
-  .header {
-    min-width: 895px;
+  .container {
+    min-width: 767px;
     background-color: rgb(75, 75, 75);
   }
   .header-wrapper {
@@ -179,21 +177,21 @@ header {
 }
 
 @media screen and (min-width: 896px) {
-  .header {
-    min-width: 1023px;
+  .container {
+    min-width: 895px;
   }
   .header-menu-list {
-    column-gap: 36px;
+    column-gap: 24px;
   }
 
   .header-menu-item {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header {
-    min-width: 1259px;
+  .container {
+    min-width: 1023px;
   }
   .header-logo-img {
     width: 320x;
@@ -202,7 +200,7 @@ header {
     column-gap: 40px;
   }
   .header-menu-item {
-    font-size: 52px;
+    font-size: 48px;
   }
   .header-menu-link {
     padding: 40px 12px;
@@ -212,8 +210,8 @@ header {
 
 
 @media screen and (min-width: 1260px) {
-  .header {
-    min-width: 1439px;
+  .container {
+    min-width: 1259px;
   }
   .header-menu-list {
     column-gap: 56px;
@@ -223,8 +221,8 @@ header {
   }
 }
 @media screen and (min-width: 1440px) {
-    .header {
-    width: 1440px;
+    .container{
+    width: 1439px;
     }
   .header-menu-list {
     column-gap: 60px;
