@@ -44,8 +44,9 @@ a {
   color: inherit;
 }
 .container {
-  max-width: 1140px;
-
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .section {
   padding-left: 15px;
@@ -57,14 +58,16 @@ a {
 /*  !  ------------HEDER --------------*/
 header {
   height: 100%;
-  min-width: 320px;
+  min-width: 375px;
 }
 .header-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+.header-logo-link {
+  background-color: rgb(111, 111, 235);
+  padding: 24px;
 }
 .header-logo-img {
   width: 100%;
@@ -75,8 +78,8 @@ header {
   height: 100%;
   width: 100%;
   font-size: 8px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 24px;
+  background-color: aqua;
 }
 .header-menu-list {
   display: flex;
@@ -85,6 +88,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
 }
 .header-menu-item {
   font-size: 52px;
@@ -114,14 +118,14 @@ header {
 @media screen and (min-width: 375px) {
   
   .header {
-    width: 375px;
+    min-width: 425px;
   }
 }
 
 @media screen and (min-width: 425px) {
 
   .header {
-    width: 425px;
+    min-width: 475px;
   }
 }
 
@@ -129,11 +133,15 @@ header {
 @media screen and (min-width: 768px) {
 
   .header {
-    width: 768px;
+    min-width: 896px;
+    background-color: rgb(75, 75, 75);
   }
   .header-wrapper {
     display: flex;
     flex-direction: row;
+  }
+  .header-logo-link {
+    background-color: rgb(75, 75, 75)
   }
   .header-logo-img {
     width: 252px;
@@ -144,8 +152,8 @@ header {
     height: 100%;
     width: 100%;
     font-size: 8px;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    background-color: rgb(75, 75, 75);
+    color: #f2f557;
   }
   .header-menu-list {
     column-gap: 10px;
@@ -158,11 +166,15 @@ header {
     padding: 40px 12px;
   }
 }
+@media screen and (min-width: 896px) {
+  .header {
+    min-width: 1024px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
-
   .header {
-    width: 1024px;
+    min-width: 1260px;
   }
   .header-logo-img {
     width: 320x;
@@ -177,17 +189,25 @@ header {
     padding: 40px 12px;
   }
 }
-
-@media screen and (min-width: 1440px) {
-
+@media screen and (min-width: 1260px) {
   .header {
-    width: 1440px;
+    min-width: 1440px;
   }
   .header-menu-list {
-    column-gap: 42px;
+    column-gap: 44px;
   }
+
   .header-menu-item {
     font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-menu-list {
+    column-gap: 50px;
+  }
+  .header-menu-item {
+    font-size: 56px;
   }
 }
 
