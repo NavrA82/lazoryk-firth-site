@@ -142,10 +142,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
+  .header {
+    background-color: rgb(75, 75, 75);
+  }
   .container {
     max-width: 738px;
-    background-color: rgb(75, 75, 75);
   }
   .header-wrapper {
     display: flex;
@@ -163,8 +164,8 @@ a {
     height: 100%;
     width: 100%;
     font-size: 8px;
-    background-color: rgb(75, 75, 75);
     color: #f2f557;
+    background-color: rgb(75, 75, 75)
   }
   .header-menu-list {
     column-gap: 10px;
@@ -174,7 +175,7 @@ a {
     font-size: 30px;
   }
   .header-menu-link {
-    padding: 12px 12px;
+    padding: 16px 1px;
   }
 }
 
