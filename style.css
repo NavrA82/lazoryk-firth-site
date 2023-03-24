@@ -47,15 +47,17 @@ a {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-.section {
   padding-left: 15px;
   padding-right: 15px;
+}
+.section {
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 /*  !  ------------HEDER --------------*/
 .container {
-  width: 320px;
+  max-width: 290px;
 }
 .header-wrapper {
   display: flex;
@@ -75,7 +77,7 @@ a {
   height: 100%;
   width: 100%;
   font-size: 8px;
-  padding: 24px 24px;
+  padding: 24px 4px;
   background-color: aqua;
 }
 .header-menu-list {
@@ -115,34 +117,34 @@ a {
 @media screen and (min-width: 375px) {
   
   .container {
-    min-width: 374px;
+    max-width: 345px;
   }
 }
 
 @media screen and (min-width: 425px) {
 
   .container{
-    min-width: 424px;
+    max-width: 395px;
   }
 }
 @media screen and (min-width: 540px) {
 
   .container {
-    min-width: 539px;
+    max-width: 510px;
   }
 }
 
 @media screen and (min-width: 652px) {
 
   .container {
-    min-width: 651px;
+    max-width: 622px;
   }
 }
 
 @media screen and (min-width: 768px) {
 
   .container {
-    min-width: 767px;
+    max-width: 738px;
     background-color: rgb(75, 75, 75);
   }
   .header-wrapper {
@@ -178,7 +180,7 @@ a {
 
 @media screen and (min-width: 896px) {
   .container {
-    min-width: 895px;
+    max-width: 866px;
   }
   .header-menu-list {
     column-gap: 24px;
@@ -191,7 +193,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1023px;
+    max-width: 994px;
   }
   .header-logo-img {
     width: 320x;
@@ -211,7 +213,7 @@ a {
 
 @media screen and (min-width: 1260px) {
   .container {
-    min-width: 1259px;
+    max-width: 1230px;
   }
   .header-menu-list {
     column-gap: 56px;
@@ -222,7 +224,7 @@ a {
 }
 @media screen and (min-width: 1440px) {
     .container{
-    width: 1439px;
+    max-width: 1410px;
     }
   .header-menu-list {
     column-gap: 60px;
