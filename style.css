@@ -153,19 +153,17 @@ a {
     flex-direction: row;
   }
   .header-logo-link {
-    background-color: rgb(75, 75, 75)
-  }
-  .header-logo-img {
-    width: 252px;
+    background-color: rgb(75, 75, 75);
+    width: 240px;
   }
   .header-menu {
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     font-size: 8px;
     color: #f2f557;
-    background-color: rgb(75, 75, 75)
+    background-color: rgb(75, 75, 75);
   }
   .header-menu-list {
     column-gap: 10px;
@@ -173,9 +171,6 @@ a {
   }
   .header-menu-item {
     font-size: 30px;
-  }
-  .header-menu-link {
-    padding: 16px 1px;
   }
 }
 
@@ -186,19 +181,20 @@ a {
   .header-menu-list {
     column-gap: 24px;
   }
-
   .header-menu-item {
     font-size: 40px;
   }
+  .header-logo-link {
+    width: 280px;
+  }
 }
+
 
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 994px;
   }
-  .header-logo-img {
-    width: 320x;
-  }
+
   .header-menu-list {
     column-gap: 40px;
   }
@@ -207,6 +203,10 @@ a {
   }
   .header-menu-link {
     padding: 40px 12px;
+    width: 100px;
+  }
+  .header-logo-link {
+    width: 320px;
   }
 }
 
@@ -222,6 +222,9 @@ a {
   .header-menu-item {
     font-size: 60px;
   }
+  .header-logo-link {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1440px) {
     .container{
@@ -231,7 +234,10 @@ a {
     column-gap: 60px;
   }
   .header-menu-item {
-    font-size: 64px;
+    font-size: 68px;
+  }
+  .header-logo-link {
+    min-width: 420x;
   }
 }
 
