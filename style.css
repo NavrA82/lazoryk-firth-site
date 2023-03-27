@@ -1,6 +1,6 @@
 body {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.21;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(45deg, #4568DC, #B06AB3);
@@ -124,7 +124,6 @@ button:hover {
 
 /* !/button-modal */
 /* ?SECTION BIKE */
-
 .bike__title {
   max-width: 290px;
   margin-bottom: 8px;
@@ -132,7 +131,6 @@ button:hover {
 .bike__subtitle {
   color: #000000;
   font-weight: 600;
-  font-size: 20px;
   text-transform: capitalize;
   text-align: center;
 }
@@ -143,10 +141,9 @@ margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
-  gap: 24px;
+  gap: 12px;
 }
 .bike__text {
-  font-size: 20px;
   text-align: justify;
 }
 .bike-column__list {
@@ -186,7 +183,6 @@ margin-bottom: 24px;
   color: #000000;
   padding: 28px 81px;
   text-transform: uppercase;
-  font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
   border: 1px rgb(4, 0, 255);
@@ -201,7 +197,6 @@ margin-bottom: 24px;
   color: #000000;
   padding: 28px 81px;
   text-transform: uppercase;
-  font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
   border: 1px rgb(4, 0, 255);
@@ -246,7 +241,6 @@ margin-bottom: 24px;
   margin-bottom: 12px;
 }
 .info__item-text {
-  font-size: 20px;
   text-align: justify;
 }
 /* !SECTION -------ANIMATOR */
@@ -378,20 +372,17 @@ margin-bottom: 24px;
     font-size: 36px;
   }
   /* !SECTION BIKE */
+  .bike__title {
+    max-width: 390px;
+  }
   .bike__inner {
-    display: flex;
     flex-direction: row;
-    margin-bottom: 24px;
-    gap: 24px;
+  }
+  .bike__column {
+    width: calc((100% - 12px) / 2);  
   }
   .bike__text {
     font-size: 16px;
-  }
-  .bike__column {
-    width: calc((100% - 24px) / 2);  
-  }
-  .bike__title {
-    max-width: 560px;
   }
   .bike__subtitle {
     font-size: 20px;
@@ -458,12 +449,10 @@ margin-bottom: 24px;
   .bike__text {
     font-size: 21px;
   }
-  /* !SECTION -------ANIMATOR */
+  /* !SECTION ANIMATOR */
   .animator-list {
     gap: 12px;
-  }
-  .animator-item {
-    width: calc((100% - 48px) / 4);
+    flex-wrap: nowrap;
   }
     /* !FOTTER SECTION */
   .footer-about-discribe {
