@@ -136,7 +136,6 @@ button:hover {
   text-transform: capitalize;
   text-align: center;
 }
-
 .bike__title-wrapper{
 margin-bottom: 24px;
 }
@@ -146,8 +145,6 @@ margin-bottom: 24px;
   margin-bottom: 24px;
   gap: 24px;
 }
-
-
 .bike__text {
   font-size: 20px;
   text-align: justify;
@@ -166,20 +163,16 @@ margin-bottom: 24px;
   height: 100%;
   border-radius: 10px;
 }
-
 .bike-column-slider {
   box-shadow: 4px 5px 15px rgb(0, 0, 0);
   border-radius: 8px;
 }
-
 .bike-column__list-item {
   font-weight: 700;
   text-transform: uppercase;
-  flex-basis: 160px;
   margin-top: 20px;
 
 }
-
 .bike-column__list-item-place {
   font-size: 12px;
   text-transform: lowercase;
