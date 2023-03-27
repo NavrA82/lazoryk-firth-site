@@ -163,8 +163,6 @@ margin-bottom: 24px;
 .bike-column-slider {
   box-shadow: 4px 5px 15px rgb(0, 0, 0);
   border-radius: 8px;
-}
-.bike-column-slider {
   margin-top: 8px;
 }
 .bike-column__list-item {
@@ -376,7 +374,7 @@ margin-bottom: 24px;
   }
   /* !SECTION BIKE */
   .bike__title {
-    max-width: 390px;
+    max-width: 500px;
   }
   .bike__inner {
     flex-direction: row;
