@@ -155,7 +155,7 @@
             <p class="footer-social-discribe">Subscribe to our social-network to receive news, updates, and special offers.</p>
             <form id="footer-form-submit">
               <label class="visually-hidden" for="user-email-subscribe">Enter email to subscribe</label>
-              <input class="footer-social-form-imput" id="user-email-subscribe" name="user_email" type="email" placeholder="Enter your email" minLength="4" maxLength="50" autofocus required>
+              <input class="footer-social-form-imput" id="user-email-subscribe" name="user_email" type="email" placeholder="Enter your email" minLength="4" maxLength="50" required>
               <button class="footer-social-form-button" form="footer-form-submit" type="submit">Subscribe</button>
             </form>
           </div>
@@ -168,7 +168,6 @@
                 <li class="footer-address-item list"><a class="footer-address-link link" href="mailto:info@example.com">Email: info@example.com</a></li>
               </ul>
             </address>
-            <img>
           </div>
         </div >
       </div>
@@ -183,13 +182,13 @@
             <use href="./images/icons.svg#icon-close-modal-bth"></use>
           </svg>
         </button>
-        <form id="form-submit" class="animator-modal-form">
+        <form id="bike-form-submit" class="animator-modal-form">
           <p class="animator-modal-title">Leave your contacts and we will call you back</p>
           <fieldset>
             <label class="animator-modal-form-label">
               <span class="animator-modal-form-label-name">Name</span>
               <span class="animator-modal-form-input-icon">
-                <input class="animator-modal-form-label-input" type="text" name="user_name" minLength="2" maxLength="100"
+                <input class="animator-modal-form-label-input" type="text" name="user_call_back__name" minLength="2" maxLength="100"
                   pattern="^[A-Za-z-Яа-яІіЇїЄєґҐ]+$" autofocus required>
                 <svg class="animator-modal-form-icon" width="18" height="18">
                   <use class="icon" href="./images/icons.svg#icon-person-modal-window"></use>
@@ -199,18 +198,18 @@
             <label class="animator-modal-form-label">
               <span class="animator-modal-form-label-name">Phone</span>
               <span class="animator-modal-form-input-icon">
-                <input class="animator-modal-form-label-input" type="tel" minLength="11" maxLength="17" name="user_phone"
+                <input class="animator-modal-form-label-input" type="tel" minLength="11" maxLength="17" name="user_call_back_phone"
                   pattern="[+0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="+xx-xxx-xxx-xx-xx" required>
                 <svg class="animator-modal-form-icon" width="18" height="24">
                   <use class="icon" href="./images/icons.svg#icon-phone-modal-window"></use>
                 </svg>
               </span>
             </label>
-            <label for="user-email" class="animator-modal-form-label">
+            <label for="user-call-back-email" class="animator-modal-form-label">
               <span class="animator-modal-form-label-name">Email</span>
               <span class="animator-modal-form-input-icon">
-                <input id="user-email" class="animator-modal-form-label-input" type="email" minLength="4" maxLength="50"
-                  name="user_email" required>
+                <input id="user-call-back-email" class="animator-modal-form-label-input" type="email" minLength="4" maxLength="50"
+                  name="user_call_back_email" required>
                 <svg class="animator-modal-form-icon" width="18" height="24">
                   <use class="icon" href="./images/icons.svg#icon-email-modal-window"></use>
                 </svg>
@@ -219,11 +218,11 @@
           </fieldset>>
           <label class="animator-modal-form-label">
             <span class="animator-modal-form-label-name">Comment</span>
-            <textarea class="animator-modal-form-label-comment" name="user_comment" placeholder="Text input"></textarea>
+            <textarea class="animator-modal-form-label-comment" name="user_call_back_comment" placeholder="Text input"></textarea>
           </label>
-          <label for="user-policy" class="animator-modal-form-checkbox-accept">
-            <input id="user-policy" class="animator-modal-form-checkbox visually-hidden" type="checkbox"
-              name="user_accept_privacy_policy" required>
+          <label for="user-policy-call-back" class="animator-modal-form-checkbox-accept">
+            <input id="user-policy-call-back" class="animator-modal-form-checkbox visually-hidden" type="checkbox"
+              name="user_accept_call_back_privacy_policy" required>
             <svg class="animator-modal-form-checkbox-icon" width="16" height="16">
               <use href="./images/icons.svg#icon-check-click"></use>
             </svg>
@@ -231,7 +230,7 @@
               of the</span>&nbsp;<a href="" class="animator-modal-form-checkbox-accept-link link">Privacy Policy</a>
           </label>
         </form>
-        <button form="form-submit" type="submit" class="animator-modal-btn-submit btn">Send</button>
+        <button form="bike-form-submit" type="submit" class="animator-modal-btn-submit btn">Send</button>
       </div>
     </div>
     <!-- ++++++++++ MODAL WINDOWS CHOOSE ANIMATOR +++++++++ -->
@@ -242,14 +241,14 @@
             <use href="./images/icons.svg#icon-close-modal-bth"></use>
           </svg>
         </button>
-        <form id="form-submit" class="animator-modal-form">
+        <form id="animator-form-submit" class="animator-modal-form">
           <p class="animator-modal-title">Choose animator, leave your contacts, and we will call you back</p>
           <fieldset>
             <label class="animator-modal-form-label">
               <span class="animator-modal-form-label-name">Name</span>
               <span class="animator-modal-form-input-icon">
-                <input class="animator-modal-form-label-input" type="text" name="user_name" minLength="2" maxLength="100"
-                  pattern="^[A-Za-z-Яа-яІіЇїЄєґҐ]+$" autofocus required>
+                <input class="animator-modal-form-label-input" type="text" name="user_choose_animator_name" minLength="2" maxLength="100"
+                  pattern="^[A-Za-z-Яа-яІіЇїЄєґҐ]+$" required>
                 <svg class="animator-modal-form-icon" width="18" height="18">
                   <use class="icon" href="./images/icons.svg#icon-person-modal-window"></use>
                 </svg>
@@ -258,18 +257,18 @@
             <label class="animator-modal-form-label">
               <span class="animator-modal-form-label-name">Phone</span>
               <span class="animator-modal-form-input-icon">
-                <input class="animator-modal-form-label-input" type="tel" minLength="11" maxLength="17" name="user_phone"
+                <input class="animator-modal-form-label-input" type="tel" minLength="11" maxLength="17" name="user_choose_animator_phone"
                   pattern="[+0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="+xx-xxx-xxx-xx-xx" required>
                 <svg class="animator-modal-form-icon" width="18" height="24">
                   <use class="icon" href="./images/icons.svg#icon-phone-modal-window"></use>
                 </svg>
               </span>
             </label>
-            <label for="user-email" class="animator-modal-form-label">
+            <label for="user-choose-animator-email" class="animator-modal-form-label">
               <span class="animator-modal-form-label-name">Email</span>
               <span class="animator-modal-form-input-icon">
-                <input id="user-email" class="animator-modal-form-label-input" type="email" minLength="4" maxLength="50"
-                  name="user_email" required>
+                <input id="user-choose-animator-email" class="animator-modal-form-label-input" type="email" minLength="4" maxLength="50"
+                  name="user_choose_animator_email" required>
                 <svg class="animator-modal-form-icon" width="18" height="24">
                   <use class="icon" href="./images/icons.svg#icon-email-modal-window"></use>
                 </svg>
@@ -296,7 +295,7 @@
             </label>
             <label for="user-darth-vader-and-captain" class="animator-modal-form-checkbox-accept">
               <input id="user-darth-vader-and-captain" class="animator-modal-form-checkbox visually-hidden" type="checkbox"
-                name="user_accept_darth-vader-and-captain">
+                name="user_accept_darth_vader_and_captain">
               <svg class="animator-modal-form-checkbox-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-check-click"></use>
               </svg>
@@ -325,11 +324,11 @@
           </fieldset>
           <label class="animator-modal-form-label">
             <span class="animator-modal-form-label-name">Comment</span>
-            <textarea class="animator-modal-form-label-comment" name="user_comment" placeholder="Text input"></textarea>
+            <textarea class="animator-modal-form-label-comment" name="user_choose_animator_comment" placeholder="Text input"></textarea>
           </label>
-          <label for="user-policy" class="animator-modal-form-checkbox-accept">
-            <input id="user-policy" class="animator-modal-form-checkbox visually-hidden" type="checkbox"
-              name="user_accept_privacy_policy" required>
+          <label for="user-choose-animator-policy" class="animator-modal-form-checkbox-accept">
+            <input id="user-choose-animator-policy" class="animator-modal-form-checkbox visually-hidden" type="checkbox"
+              name="user_accept_choose_animator_privacy_policy" required>
             <svg class="animator-modal-form-checkbox-icon" width="16" height="16">
               <use href="./images/icons.svg#icon-check-click"></use>
             </svg>
@@ -338,7 +337,7 @@
               of the</span>&nbsp;<a href="" class="animator-modal-form-checkbox-accept-link link">Privacy Policy</a>
           </label>
         </form>
-        <button form="form-submit" type="submit" class="animator-modal-btn-submit btn">Send</button>
+        <button form="animator-form-submit" type="submit" class="animator-modal-btn-submit btn">Send</button>
       </div>
     </div>
     <!-- ?============= /MODAL WINDOWS ================== -->
