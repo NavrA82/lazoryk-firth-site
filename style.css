@@ -115,6 +115,14 @@ button:is(:focus, :hover) {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* *******************!1440px - ∞ px *******************/
+@media screen and (max-width: 1439px) {
+  .header-logo-link-laptop {
+    display: none;
+  }
+  
+}
+
 /* *******************!0px - 375px *******************/
 /*  ?  =============== HEDER =======================*/
 .container {
@@ -125,6 +133,7 @@ button:is(:focus, :hover) {
   flex-direction: column;
   align-items: center;
 }
+.header-logo-link-laptop,
 .header-logo-link {
   padding: 24px;
 }
@@ -403,7 +412,6 @@ margin-bottom: 24px;
   width: 100%;
   font-size: 12px;
 }
-
 .animator-modal-form-input-icon {
   margin-top: 4px;
   position: relative;
@@ -436,6 +444,7 @@ margin-bottom: 24px;
 }
 
 .animator-modal-form-label-comment {
+  font-size: 12px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -444,7 +453,7 @@ margin-bottom: 24px;
   height: 80px;
   resize: none;
   transition: border var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition-timing-function: var(--12pxtransition-timing-function);
 }
 
 .animator-modal-form-label-comment:is(:hover, :focus) {
@@ -614,7 +623,9 @@ margin-bottom: 24px;
     .animator-modal-form-label-input {
     font-size: 16px;
   }
-
+  .animator-modal-form-label-comment {
+    font-size: 16px;
+  }
   /* ----------------------- checkbox and checkbox fake ------------- */
   .animator-police-text-checkbox {
     font-size: 12px;
@@ -623,7 +634,7 @@ margin-bottom: 24px;
   .animator-modal-form-checkbox-accept-link {
     font-size: 12px;
   }
-  
+
 }
 /* *******************!768px - 1024px *******************/
 @media screen and (min-width: 768px) {
@@ -638,6 +649,7 @@ margin-bottom: 24px;
   .header-wrapper {
     flex-direction: row;
   }
+  .header-logo-link-laptop,
   .header-logo-link {
     width: 240px;
   }
@@ -732,6 +744,7 @@ margin-bottom: 24px;
   .header-menu-item {
     font-size: 48px;
   }
+  .header-logo-link-laptop,
   .header-logo-link {
     width: 320px;
   }
@@ -771,9 +784,6 @@ margin-bottom: 24px;
     font-size: 52px;
   }
   /*  ?  =============== HEDER =======================*/
-  .header-menu {
-    justify-content: flex-end;
-  }
   .header-menu-list {
     gap: 78px;
   }
