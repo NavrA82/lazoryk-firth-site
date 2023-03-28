@@ -183,7 +183,7 @@ margin-bottom: 24px;
   text-transform: lowercase;
   font-weight: 600;
 }
-/* ?============== INFO SECTION ============ */
+/* ?================== INFO SECTION =============== */
 .info__section {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -194,7 +194,7 @@ margin-bottom: 24px;
 .info__item-text {
   text-align: justify;
 }
-/* ?=============== ANIMATOR SECTION=============== */
+/* ?=============== ANIMATOR SECTION =============== */
 .animator-title {
   margin-bottom: 12px;
 }
