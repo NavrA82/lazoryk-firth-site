@@ -13,7 +13,7 @@
   --third-background-color: #4D5AE5;
   --fourth-background-color: #FFFFFF;
   /* -------accent-color ----------*/
-  --accent-color: #333333;
+  --accent-color: rgba(0, 0, 0, 0.5);
   /* ---------border color--------- */
   --border-color-img-portfolio: #E7E9FC;
   /* --------- found -------------- */
@@ -45,12 +45,16 @@ h5,
 h6,
 ul,
 li,
-p{
+p,
+fieldset{
   margin: 0;
 }
-li, ul {
+fieldset,
+li, 
+ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  border: none;
 }
 /* ------------------UNIVERSAL CLASSES--------------------- */
 /* fading title effect */
@@ -310,7 +314,7 @@ margin-bottom: 24px;
   letter-spacing: 0.04em;
   color: #000000;
 }
-/* ?=============MODAL WINDOWS================== */
+/* ?============= MODAL WINDOWS ================== */
 
 .backdrop {
   position: fixed;
@@ -327,19 +331,28 @@ margin-bottom: 24px;
   visibility: hidden;
   pointer-events: none;
 }
-
 .modal-open {
   overflow: hidden;
   cursor: pointer;
 }
+
+.is-hidden-animator {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-open-animator {
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .animator-modal-window {
   position: absolute;
-  z-index: 11;
+  z-index: 999;
   left: 50%;
   top: 12px;
   transform: translate(-50%, 0);
   min-width: 308px;
-  height: 584px;
   background: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -351,12 +364,12 @@ margin-bottom: 24px;
 
 .animator-modal-title {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--first-text-color);
-  width: 200px;
+  width: 230px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -385,6 +398,7 @@ margin-bottom: 24px;
   outline: none;
   border: none;
   border-radius: 4px;
+  border: 2px;
   padding: 8px 16px 8px 38px;
   width: 100%;
   font-size: 12px;
@@ -413,9 +427,9 @@ margin-bottom: 24px;
 }
 
 .animator-modal-form-input-icon:hover .animator-modal-form-icon {
-    border-color: var(--accent-color);
+  border-color: var(--accent-color);
   fill: #000000;
-  }
+}
 .animator-modal-form-input-icon:hover {
   border-color: var(--accent-color);
   fill: #000000;
@@ -455,9 +469,8 @@ margin-bottom: 24px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
-  margin-top: 16px;
+  margin-top: 8px;
 }
-
 .animator-modal-form-checkbox-fake {
   display: inline-block;
   width: 16px;
@@ -484,12 +497,20 @@ margin-bottom: 24px;
   fill: var(--accent-color);
 }
 
-.text-checkbox {
+.animator-police-text-checkbox {
   font-weight: 400;
   font-size: 8px;
   align-items: center;
   line-height: 1.33;
   letter-spacing: 0.04em
+}
+.animator-choose-text {
+  font-weight: 500;
+  font-size: 12px;
+  align-items: center;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--first-text-color)
 }
 
 .animator-modal-form-checkbox-accept-link {
@@ -547,9 +568,9 @@ margin-bottom: 24px;
   transition-timing-function: var(--transition-timing-function);
 }
 .animator-modal-btn-close:is(:hover, :focus) {
-  background-color: #333;
+  background-color: var(--accent-color);
   color: #FFF;
-  border-color: #333;
+  border-color: var(--accent-color);
   border-radius: 50px;
   cursor: pointer;
 }
@@ -557,7 +578,7 @@ margin-bottom: 24px;
   fill: #FFF;
 }
 .animator-modal-btn-submit:is(:hover, :focus){
-  background-color: #333;
+  background-color: var(--accent-color);
   color: #FFF;
 }
 
@@ -582,9 +603,9 @@ margin-bottom: 24px;
   /* -------------------- modal window and backdrop ----------------- */
   .animator-modal-window {
     min-width: 408px;
-    height: 584px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
-
   .animator-modal-title {
     font-size: 16px;
     line-height: 1.5;
@@ -595,7 +616,7 @@ margin-bottom: 24px;
   }
 
   /* ----------------------- checkbox and checkbox fake ------------- */
-  .text-checkbox {
+  .animator-police-text-checkbox {
     font-size: 12px;
   }
 
@@ -696,11 +717,7 @@ margin-bottom: 24px;
   .footer-address-item {
   font-size: 20px;
   }
-  /* -------------------- modal window and backdrop ----------------- */
-  .animator-modal-window {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+
 }
 /* *******************!1024px - 1440px *******************/
 @media screen and (min-width: 1024px) {
