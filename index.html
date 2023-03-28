@@ -170,9 +170,10 @@
           <div class="footer-social footer-wrapper-ittem">
             <h3 class="footer-title title">Social-network</h3>
             <p class="footer-social-discribe">Subscribe to our social-network to receive news, updates, and special offers.</p>
-            <form>
-              <input class="footer-social-form-imput" type="email" placeholder="Enter your email">
-              <button type="submit">Subscribe</button>
+            <form id="form-submit">
+              <label class="visually-hidden" for="user-email-subscribe">Enter email to subscribe</label>
+              <input class="footer-social-form-imput" id="user-email-subscribe" name="user_email" type="email" placeholder="Enter your email" minLength="4" maxLength="50" autofocus required>
+              <button class="footer-social-form-button" form="form-submit" type="submit">Subscribe</button>
             </form>
           </div>
           <div class="footer-contact footer-wrapper-ittem">
