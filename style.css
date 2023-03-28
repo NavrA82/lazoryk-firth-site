@@ -248,8 +248,7 @@ margin-bottom: 24px;
   margin-bottom: 12px;
 }
 .footer-about,
-.footer-social,
-.footer-social-form-imput {
+.footer-social {
   margin-bottom: 24px;
 }
 .footer-wrapper {
@@ -277,6 +276,7 @@ margin-bottom: 24px;
   height: 32px;
   border-radius: 5px;
   padding: 0px 12px;
+  margin-bottom: 8px;
 }
 .footer-social-form-button {
   background-color: #fff;
