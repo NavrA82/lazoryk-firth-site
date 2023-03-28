@@ -1,59 +1,21 @@
-document.addEventListener(
-"DOMContentLoaded",
-function () {
-const modals = [
-    "data-first-modal",
-    "data-second-modal",
-    "data-third-modal",
-];
+(() => {
+    const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+    };
 
-modals.forEach((element) => {
-    const openModalSelector = element + "-open";
-    const closeModalSelector = element + "-close";
-
-    const openModalBtns = document.querySelectorAll(`[${openModalSelector}]`);
-    const closeModalBtns = document.querySelectorAll(
-    `[${closeModalSelector}]`
-    );
-    const modal = document.querySelector("[" + element + "]");
-    const modalContent = modal.querySelector(".modal-content");
-
-    if (!modal) logModalError("Can't find Modal with attribute " + modal);
-    if (openModalBtns.length === 0)
-    logModalError(
-        "Can't find Open modal button with attribute " + openModalSelector
-    );
-    if (closeModalBtns.length === 0)
-    logModalError(
-        "Can't find Close modal button with attribute " + closeModalSelector
-    );
-    if (!modal || openModalBtns.length === 0 || closeModalBtns.length === 0)
-    return;
-
-    openModalBtns.forEach((openBtn) =>
-    openBtn.addEventListener("click", toggleModal)
-    );
-    closeModalBtns.forEach((closeBtn) =>
-    closeBtn.addEventListener("click", toggleModal)
-    );
-    modal.addEventListener("click", handleBackdropClick);
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
 
     function toggleModal() {
-    console.log("click");
-    modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("modal-open")
+    refs.modal.classList.toggle("is-hidden");
     }
-
+    refs.modal.addEventListener("click", handleBackdropClick);
     function handleBackdropClick(event) {
-    if (event.target === modalContent) {
-        return;
+    if (event.target === refs.modal) {
+        toggleModal();
     }
-    modal.classList.add("is-hidden");
-    }
-});
-},
-false
-);
-// function logModalError(text) {
-//   const styles = "color: #bada55";
-//   console.log("%c" + text, styles);
-// }
+}
+})();
