@@ -345,12 +345,22 @@ margin-bottom: 24px;
 }
 
 @media screen and (min-width: 425px) {
-
   .container{
     max-width: 395px;
   }
 }
+@media screen and (min-width: 560px) {
+  .container {
+    max-width: 560px;
+  }
 
+}
+@media screen and (min-width: 664px) {
+  .container {
+    max-width: 664px;
+  }
+
+}
 @media screen and (min-width: 768px) {
   .title {
     font-size: 36px;
@@ -483,8 +493,7 @@ margin-bottom: 24px;
   .header-menu-list {
     gap: 78px;
   }
-
-  /* !SECTION BIKE */
+  /* ?============== SECTION BIKE */
   .bike__text {
     font-size: 31px;
   }
@@ -500,14 +509,14 @@ margin-bottom: 24px;
   .bike-column__list-item-place{
     font-size: 16px;
   }
-  /* !SECTION----INFO--SECTION */
+  /* ?========= SECTION INFO SECTION */
   .info__item-text {
     font-size: 30px;
   }
   .footer-title {
     font-size: 36px;
   }
-  /* !FOTTER SECTION */
+  /* ?============= FOTTER SECTION */
   .footer-about-discribe {
     font-size: 20px;
   }
