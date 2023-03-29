@@ -436,11 +436,11 @@ margin-bottom: 24px;
 
 .animator-modal-form-input-icon:hover .animator-modal-form-icon {
   border-color: var(--accent-color);
-  fill: #000000;
+  fill: #333;
 }
 .animator-modal-form-input-icon:hover {
   border-color: var(--accent-color);
-  fill: #000000;
+  fill: #333;
 }
 
 .animator-modal-form-label-comment {
@@ -459,16 +459,14 @@ margin-bottom: 24px;
 .animator-modal-form-label-comment:is(:hover, :focus) {
   border-color: var(--accent-color);
 }
-
 .animator-modal-form-label-comment::placeholder {
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #95969b;
 }
-
 /* ----------------------- checkbox and checkbox fake ------------- */
 .animator-modal-form-checkbox-accept {
   display: flex;
