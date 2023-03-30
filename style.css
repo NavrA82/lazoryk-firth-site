@@ -1,41 +1,41 @@
 /* ---------------GENERAL SETTINGS-------------------- */
 :root {
-  /* -----text color---- */
-  --first-text-color: #434455;
-  --second-text-color: #FFFFFF;
-  --third-text-color: #2E2F42;
-  --fourth-text-color: #4D5AE5;
-  --fifth-text-color: #F4F4FD;
-  --sixth-text-color: #E7E9FC;
-  /* -----background color----------*/
-  --first-background-color: #2E2F42;
-  --second-background-color: #F4F4FD;
-  --third-background-color: #4D5AE5;
-  --fourth-background-color: #FFFFFF;
-  /* -------accent-color ----------*/
-  --accent-color: rgba(0, 0, 0, 0.5);
-  /* ---------border color--------- */
-  --border-color-img-portfolio: #E7E9FC;
-  /* --------- found -------------- */
-  --secondary-found: 'Raleway', sans-serif;
-  /* -----settings padding, margin and gap*/
-  --basic-settings-padding-section: 120px;
-  --secondary-settings-padding-section: 96px;
-  --basic-settings-gap: 24px;
-  --basic-settings-margin: 72px;
-  --secondary-settings-margin: 8px;
-  /* -------border radius-------------- */
-  --basic-border-radius: 4px;
-  /* ---------- transition ------------- */
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1)
+	/* -----text color---- */
+	--first-text-color: #434455;
+	--second-text-color: #ffffff;
+	--third-text-color: #2e2f42;
+	--fourth-text-color: #4d5ae5;
+	--fifth-text-color: #f4f4fd;
+	--sixth-text-color: #e7e9fc;
+	/* -----background color----------*/
+	--first-background-color: #2e2f42;
+	--second-background-color: #f4f4fd;
+	--third-background-color: #4d5ae5;
+	--fourth-background-color: #ffffff;
+	/* -------accent-color ----------*/
+	--accent-color: rgba(0, 0, 0, 0.5);
+	/* ---------border color--------- */
+	--border-color-img-portfolio: #e7e9fc;
+	/* --------- found -------------- */
+	--secondary-found: "Raleway", sans-serif;
+	/* -----settings padding, margin and gap*/
+	--basic-settings-padding-section: 120px;
+	--secondary-settings-padding-section: 96px;
+	--basic-settings-gap: 24px;
+	--basic-settings-margin: 72px;
+	--secondary-settings-margin: 8px;
+	/* -------border radius-------------- */
+	--basic-border-radius: 4px;
+	/* ---------- transition ------------- */
+	--transition-duration: 250ms;
+	--transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 body {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.21;
-  color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(45deg, #4568DC, #B06AB3);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.21;
+	color: rgba(255, 255, 255, 0.87);
+	background: linear-gradient(45deg, #4568dc, #b06ab3);
 }
 h1,
 h2,
@@ -46,787 +46,785 @@ h6,
 ul,
 li,
 p,
-fieldset{
-  margin: 0;
+fieldset {
+	margin: 0;
 }
 fieldset,
-li, 
+li,
 ul {
-  list-style: none;
-  padding: 0;
-  border: none;
+	list-style: none;
+	padding: 0;
+	border: none;
 }
 /* ------------------UNIVERSAL CLASSES--------------------- */
 /* fading title effect */
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 /* delete marker */
 .list {
-  list-style: none;
+	list-style: none;
 }
 /* delete underline */
 .link {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 /* main title attributes */
 .title {
-  font-size: 24px;
-  text-transform: capitalize;
-  text-align: center;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  margin-left: auto;
-  margin-right: auto;
+	font-size: 24px;
+	text-transform: capitalize;
+	text-align: center;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+	margin-left: auto;
+	margin-right: auto;
 }
 /* main button attributes */
 button {
-  display: block;
-  margin: auto;
-  padding: 15px 25px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  cursor: pointer;
-  transition: .5s;
+	display: block;
+	margin: auto;
+	padding: 15px 25px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
 button:is(:focus, :hover) {
-  background: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0.3);
 }
 .container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 /* *******************!1440px - ∞ px *******************/
 @media screen and (max-width: 1439px) {
-  .header-logo-link-laptop {
-    display: none;
-  }
-  
+	.header-logo-link-laptop {
+		display: none;
+	}
 }
 
 /* *******************!0px - 375px *******************/
 /*  ?  =============== HEDER =======================*/
 .container {
-  max-width: 320px;
+	max-width: 320px;
 }
 .header-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .header-logo-link-laptop,
 .header-logo-link {
-  padding: 24px;
+	padding: 24px;
 }
 .header-logo-img {
-  width: 100%;
+	width: 100%;
 }
-.header-menu{
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  font-size: 8px;
-  padding: 24px 4px;
+.header-menu {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: 8px;
+	padding: 24px 4px;
 }
 .header-menu-list {
-  display: flex;
-  column-gap: 4px;
-  row-gap: 24px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+	display: flex;
+	column-gap: 4px;
+	row-gap: 24px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 }
 .header-menu-item {
-  font-size: 48px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: transparent;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 8px;
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	padding: 8px 8px;
 }
 .header-menu-link {
-  transition: .5s;
+	transition: 0.5s;
 }
 .header-menu-item:hover {
-  background: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0.3);
 }
 /* ?=============== BIKE SECTION =============== */
 .bike__title {
-  max-width: 290px;
-  margin-bottom: 8px;
+	max-width: 290px;
+	margin-bottom: 8px;
 }
 .bike__subtitle {
-  color: #000000;
-  font-weight: 600;
-  text-transform: capitalize;
-  text-align: center;
+	color: #000000;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
 }
-.bike__title-wrapper{
-margin-bottom: 24px;
+.bike__title-wrapper {
+	margin-bottom: 24px;
 }
 .bike__inner {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
-  gap: 12px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+	gap: 12px;
 }
 .bike__text {
-  text-align: justify;
+	text-align: justify;
 }
 .bike-column__list {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
 }
 .bike-column__title {
-  color: #000000;
-  font-size: 16px;
+	color: #000000;
+	font-size: 16px;
 }
 .bike-column-slider__img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
 }
 .bike-column-slider {
-  box-shadow: 4px 5px 15px rgb(0, 0, 0);
-  border-radius: 8px;
-  margin-bottom: 20px;
+	box-shadow: 4px 5px 15px rgb(0, 0, 0);
+	border-radius: 8px;
+	margin-bottom: 20px;
 }
 .bike-column__list-item {
-  font-weight: 700;
-  text-transform: uppercase;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .bike-column__list-item-place {
-  font-size: 12px;
-  text-transform: lowercase;
-  font-weight: 600;
+	font-size: 12px;
+	text-transform: lowercase;
+	font-weight: 600;
 }
 /* ?================== INFO SECTION =============== */
 .info__section {
-  padding-top: 36px;
-  padding-bottom: 36px;
+	padding-top: 36px;
+	padding-bottom: 36px;
 }
 .info__item-title {
-  margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 .info__item-text {
-  text-align: justify;
+	text-align: justify;
 }
 /* ?=============== ANIMATOR SECTION =============== */
 .animator-section {
-  padding-bottom: 36px;
+	padding-bottom: 36px;
 }
 .animator-title {
-  margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 .animator-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 24px;
 }
 .animator-img {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgb(255, 255, 255);
-  width: 100%;
-  height: 100%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
 }
 /* ?============= FOTTERR SECTION ========= */
 .footer-section {
-  background-color: #333;
-  padding-top: 36px;
-  padding-bottom: 36px;
+	background-color: #333;
+	padding-top: 36px;
+	padding-bottom: 36px;
 }
 .footer-title {
-  color: inherit;
-  margin-bottom: 12px;
+	color: inherit;
+	margin-bottom: 12px;
 }
 .footer-about,
 .footer-social {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 .footer-wrapper {
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .footer-address-item {
-  font-size: 22px;
-  text-align: center;
+	font-size: 22px;
+	text-align: center;
 }
 .footer-about-discribe {
-  font-size: 16px;
-  text-align: justify;
+	font-size: 16px;
+	text-align: justify;
 }
 .footer-social-discribe {
-  font-size: 16px;
-  text-align: justify;
-  margin-bottom: 4px;
+	font-size: 16px;
+	text-align: justify;
+	margin-bottom: 4px;
 }
 .footer-social-form-imput {
-  outline: none;
-  width: 100%;
-  border: #000000;
-  height: 32px;
-  border-radius: 5px;
-  padding: 0px 12px;
-  margin-bottom: 8px;
+	outline: none;
+	width: 100%;
+	border: #000000;
+	height: 32px;
+	border-radius: 5px;
+	padding: 0px 12px;
+	margin-bottom: 8px;
 }
 .footer-social-form-button {
-  background-color: #fff;
-  color: #333;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 4px 25px;
-  min-width: 100%;
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 4px 25px;
+	min-width: 100%;
 }
 .footer-social-form-button:is(:focus, :hover) {
-  background-color: #333;
-  color: #fff;
-  border-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+	background-color: #333;
+	color: #fff;
+	border-color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
 }
 .footer-social-form-imput::placeholder {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #000000;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #000000;
 }
 /* ?============= MODAL WINDOWS ================== */
 
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  opacity: 1;
-  visibility: visible;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 1;
+	visibility: visible;
 }
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
 .modal-open {
-  overflow: hidden;
-  cursor: pointer;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .is-hidden-animator {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
 .modal-open-animator {
-  overflow: hidden;
-  cursor: pointer;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .animator-modal-window {
-  position: absolute;
-  z-index: 999;
-  left: 50%;
-  top: 12px;
-  transform: translate(-50%, 0);
-  min-width: 308px;
-  background: #FCFCFC;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 24px;
-  margin: 0;
-  overflow-y: auto;
-  max-height: 100vh;
+	position: absolute;
+	z-index: 999;
+	left: 50%;
+	top: 12px;
+	transform: translate(-50%, 0);
+	min-width: 308px;
+	background: #fcfcfc;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding: 24px;
+	margin: 0;
+	overflow-y: auto;
+	max-height: 100vh;
 }
 
 .animator-modal-title {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--first-text-color);
-  width: 230px;
-  margin-left: auto;
-  margin-right: auto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--first-text-color);
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .animator-modal-form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
 }
 
 .animator-modal-form-label {
-  display: flex;
-  flex-direction: column;
-  margin-top: var(--secondary-settings-margin);
+	display: flex;
+	flex-direction: column;
+	margin-top: var(--secondary-settings-margin);
 }
 
 .animator-modal-form-label-name {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #8E8F99;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: #8e8f99;
 }
 
 .animator-modal-form-label-input {
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  border: 2px;
-  padding: 8px 16px 8px 38px;
-  width: 100%;
-  font-size: 12px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	border: 2px;
+	padding: 8px 16px 8px 38px;
+	width: 100%;
+	font-size: 12px;
 }
 .animator-modal-form-input-icon {
-  margin-top: 4px;
-  position: relative;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: border var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+	margin-top: 4px;
+	position: relative;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	transition: border var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
 }
 
 .animator-modal-form-icon {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: #95969b;
-  top: 50%;
-  left: 16px;
-  transform: translate(0, -50%);
-  transition: fill var(--transition-duration), border var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: #95969b;
+	top: 50%;
+	left: 16px;
+	transform: translate(0, -50%);
+	transition: fill var(--transition-duration), border var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
 }
 
 .animator-modal-form-input-icon:hover .animator-modal-form-icon {
-  border-color: var(--accent-color);
-  fill: #333;
+	border-color: var(--accent-color);
+	fill: #333;
 }
 .animator-modal-form-input-icon:hover {
-  border-color: var(--accent-color);
-  fill: #333;
+	border-color: var(--accent-color);
+	fill: #333;
 }
 
 .animator-modal-form-label-comment {
-  font-size: 12px;
-  outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 8px 16px;
-  margin-top: 4px;
-  height: 80px;
-  resize: none;
-  transition: border var(--transition-duration);
-  transition-timing-function: var(--12pxtransition-timing-function);
+	font-size: 12px;
+	outline: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 8px 16px;
+	margin-top: 4px;
+	height: 80px;
+	resize: none;
+	transition: border var(--transition-duration);
+	transition-timing-function: var(--12pxtransition-timing-function);
 }
 
 .animator-modal-form-label-comment:is(:hover, :focus) {
-  border-color: var(--accent-color);
+	border-color: var(--accent-color);
 }
 .animator-modal-form-label-comment::placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #95969b;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: #95969b;
 }
 /* ----------------------- checkbox and checkbox fake ------------- */
 .animator-modal-form-checkbox-accept {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #757575;
-  margin-top: 8px;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: #757575;
+	margin-top: 8px;
 }
 .animator-modal-form-checkbox-fake {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid #2E2F42;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 8px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1.25px solid #2e2f42;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-right: 8px;
 }
 
 .animator-modal-form-checkbox-icon {
-  display: inline-block;
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
 }
 
-.animator-modal-form-checkbox:checked~.animator-modal-form-checkbox-icon {
-  opacity: 1;
+.animator-modal-form-checkbox:checked ~ .animator-modal-form-checkbox-icon {
+	opacity: 1;
 }
 
-.animator-modal-form-checkbox:hover~.animator-modal-form-checkbox-icon {
-  border: -2px solid var(--accent-color);
-  fill: var(--accent-color);
+.animator-modal-form-checkbox:hover ~ .animator-modal-form-checkbox-icon {
+	border: -2px solid var(--accent-color);
+	fill: var(--accent-color);
 }
 
 .animator-police-text-checkbox {
-  font-weight: 400;
-  font-size: 8px;
-  align-items: center;
-  line-height: 1.33;
-  letter-spacing: 0.04em
+	font-weight: 400;
+	font-size: 8px;
+	align-items: center;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
 }
 .animator-choose-text {
-  font-weight: 500;
-  font-size: 12px;
-  align-items: center;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: var(--first-text-color)
+	font-weight: 500;
+	font-size: 12px;
+	align-items: center;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: var(--first-text-color);
 }
 
 .animator-modal-form-checkbox-accept-link {
-  font-weight: 400;
-  font-size: 8px;
-  align-items: center;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
-  color: var(--fourth-text-color);
-  transition: color var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+	font-weight: 400;
+	font-size: 8px;
+	align-items: center;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	text-decoration-line: underline;
+	color: var(--fourth-text-color);
+	transition: color var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
 }
 
 .animator-modal-form-checkbox-accept-link:hover {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 /* ---------------------- modal window button --------------------------- */
 .animator-modal-btn-submit {
-  display: block;
-  width: 178px;
-  margin: auto;
-  background-color: #fff;
-    color: #333;
-    padding: 10px 20px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 4px 25px;
-    min-width: 100%;
+	display: block;
+	width: 178px;
+	margin: auto;
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 4px 25px;
+	min-width: 100%;
 }
 
 .animator-modal-btn-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  background-color: #fff;
-  border: 1px solid #333;
-  border-radius: 50px;
-  padding: 0;
-  cursor: pointer;
-  transition: background-color var(--transition-duration), border var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	background-color: #fff;
+	border: 1px solid #333;
+	border-radius: 50px;
+	padding: 0;
+	cursor: pointer;
+	transition: background-color var(--transition-duration),
+		border var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
 }
 
 .animator-modal-btn-icon {
-  fill: #333;
-  transition: fill var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+	fill: #333;
+	transition: fill var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
 }
 .animator-modal-btn-close:is(:hover, :focus) {
-  background-color: var(--accent-color);
-  color: #FFF;
-  border-color: var(--accent-color);
-  border-radius: 50px;
-  cursor: pointer;
+	background-color: var(--accent-color);
+	color: #fff;
+	border-color: var(--accent-color);
+	border-radius: 50px;
+	cursor: pointer;
 }
 .animator-modal-btn-close:is(:hover, :focus) .animator-modal-btn-icon {
-  fill: #FFF;
+	fill: #fff;
 }
-.animator-modal-btn-submit:is(:hover, :focus){
-  background-color: var(--accent-color);
-  color: #FFF;
+.animator-modal-btn-submit:is(:hover, :focus) {
+	background-color: var(--accent-color);
+	color: #fff;
 }
 
 /* *******************!375px - 425px *******************/
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
+	.container {
+		max-width: 375px;
+	}
 }
 /* *******************!425px - px *******************/
 @media screen and (min-width: 425px) {
-  .container{
-    max-width: 425px;
-  }
-
+	.container {
+		max-width: 425px;
+	}
 }
 /* *******************!425px - 560px *******************/
 @media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-  /* -------------------- modal window and backdrop ----------------- */
-  .animator-modal-window {
-    min-width: 408px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .animator-modal-title {
-    font-size: 16px;
-    line-height: 1.5;
-    width: 280px;
-  }
-    .animator-modal-form-label-input {
-    font-size: 16px;
-  }
-  .animator-modal-form-label-comment {
-    font-size: 16px;
-  }
-  /* ----------------------- checkbox and checkbox fake ------------- */
-  .animator-police-text-checkbox {
-    font-size: 12px;
-  }
+	.container {
+		max-width: 480px;
+	}
+	/* -------------------- modal window and backdrop ----------------- */
+	.animator-modal-window {
+		min-width: 408px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.animator-modal-title {
+		font-size: 16px;
+		line-height: 1.5;
+		width: 280px;
+	}
+	.animator-modal-form-label-input {
+		font-size: 16px;
+	}
+	.animator-modal-form-label-comment {
+		font-size: 16px;
+	}
+	/* ----------------------- checkbox and checkbox fake ------------- */
+	.animator-police-text-checkbox {
+		font-size: 12px;
+	}
 
-  .animator-modal-form-checkbox-accept-link {
-    font-size: 12px;
-  }
-
+	.animator-modal-form-checkbox-accept-link {
+		font-size: 12px;
+	}
 }
 /* *******************!768px - 1024px *******************/
 @media screen and (min-width: 768px) {
-  /* -----------------UNIVERSAL CLASSES----------------- */
-  .title {
-    font-size: 36px;
-  }
-  .container {
-    max-width: 768px;
-  }
-  /*  ?  =============== HEDER =======================*/
-  .header-wrapper {
-    flex-direction: row;
-  }
-  .header-logo-link-laptop,
-  .header-logo-link {
-    width: 240px;
-  }
-  .header-menu-list {
-    column-gap: 10px;
-    flex-direction: row;
-  }
-  .header-menu-item {
-    font-size: 36px;
-  }
-  /* ?=============== BIKE SECTION =============== */
-  .bike__title {
-    max-width: 500px;
-  }
-  .bike__inner {
-    flex-direction: row;
-  }
-  .bike__column {
-    width: calc((100% - 12px) / 2);  
-  }
-  .bike__text {
-    font-size: 17px;
-  }
-  .bike__subtitle {
-    font-size: 20px;
-  }
-  .bike-column-slider {
-    margin-bottom: 28px;
-  }
-  .bike-column__title {
-    font-size: 20px;
-  }
-  .bike-column__list-item-place {
-    font-size: 16px;
-  }
-  /* ?=============== ANIMATOR SECTION=============== */
-  .animator-item {
-    width: calc((100% - 24px) / 2);
-  }
-  .animator-list {
-    margin-bottom: 36px;
-  }
-  /* ?================ FOTTER SECTION =============== */
-  .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 12px;
-    max-width: 1440px;
-  }
-  .footer-wrapper-ittem {
-    width: calc((100% - 12px * 2) / 3);
-    height: 100%;
-  }  
-  .footer-title {
-    font-size: 28px;
-  }
-  .footer-about {
-    order: 1;
-    margin-bottom: 0;
-  }
-  .footer-about-discribe {
-    font-size: 14px;
-  }
-  .footer-social{
-    order: 3;
-    margin-bottom: 0;
-  }
-  .footer-social-form-imput {
-    margin-bottom: 8px;
-  }
-  .footer-social-discribe {
-    font-size: 13px;
-  }
-  .footer-contact {
-    order: 2;
-  }
-  .footer-address-item {
-  font-size: 20px;
-  }
-
+	/* -----------------UNIVERSAL CLASSES----------------- */
+	.title {
+		font-size: 36px;
+	}
+	.container {
+		max-width: 768px;
+	}
+	/*  ?  =============== HEDER =======================*/
+	.header-wrapper {
+		flex-direction: row;
+	}
+	.header-logo-link-laptop,
+	.header-logo-link {
+		width: 240px;
+	}
+	.header-menu-list {
+		column-gap: 10px;
+		flex-direction: row;
+	}
+	.header-menu-item {
+		font-size: 36px;
+	}
+	/* ?=============== BIKE SECTION =============== */
+	.bike__title {
+		max-width: 500px;
+	}
+	.bike__inner {
+		flex-direction: row;
+	}
+	.bike__column {
+		width: calc((100% - 12px) / 2);
+	}
+	.bike__text {
+		font-size: 17px;
+	}
+	.bike__subtitle {
+		font-size: 20px;
+	}
+	.bike-column-slider {
+		margin-bottom: 28px;
+	}
+	.bike-column__title {
+		font-size: 20px;
+	}
+	.bike-column__list-item-place {
+		font-size: 16px;
+	}
+	/* ?=============== ANIMATOR SECTION=============== */
+	.animator-item {
+		width: calc((100% - 24px) / 2);
+	}
+	.animator-list {
+		margin-bottom: 36px;
+	}
+	/* ?================ FOTTER SECTION =============== */
+	.footer-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 12px;
+		max-width: 1440px;
+	}
+	.footer-wrapper-ittem {
+		width: calc((100% - 12px * 2) / 3);
+		height: 100%;
+	}
+	.footer-title {
+		font-size: 28px;
+	}
+	.footer-about {
+		order: 1;
+		margin-bottom: 0;
+	}
+	.footer-about-discribe {
+		font-size: 14px;
+	}
+	.footer-social {
+		order: 3;
+		margin-bottom: 0;
+	}
+	.footer-social-form-imput {
+		margin-bottom: 8px;
+	}
+	.footer-social-discribe {
+		font-size: 13px;
+	}
+	.footer-contact {
+		order: 2;
+	}
+	.footer-address-item {
+		font-size: 20px;
+	}
 }
 /* *******************!1024px - 1440px *******************/
 @media screen and (min-width: 1024px) {
-  /* -----------------UNIVERSAL CLASSES----------------- */
-  .container {
-    max-width: 1024px;
-  }
-  /*  ?  =============== HEDER =======================*/
-  .header-menu-list {
-    column-gap: 32px;
-  }
-  .header-menu-item {
-    font-size: 48px;
-  }
-  .header-logo-link-laptop,
-  .header-logo-link {
-    width: 320px;
-  }
-  /* ?=============== BIKE SECTION =============== */
-  .bike__text {
-    font-size: 23px;
-  }
-  .bike-column__title {
-    font-size: 28px;
-  }
-  .bike-column__list-item-place {
-    font-size: 24px;
-  }
-  /* ?=============== ANIMATOR SECTION=============== */
-  .animator-list {
-    gap: 12px;
-    flex-wrap: nowrap;
-  }
-    /* ?============= FOTTERR SECTION ========= */
-  .footer-about-discribe {
-    font-size: 17px;
-  }
-  .footer-address-item {
-    font-size: 24px;
-  }
-  .footer-social-discribe {
-    font-size: 17px;
-  }
+	/* -----------------UNIVERSAL CLASSES----------------- */
+	.container {
+		max-width: 1024px;
+	}
+	/*  ?  =============== HEDER =======================*/
+	.header-menu-list {
+		column-gap: 32px;
+	}
+	.header-menu-item {
+		font-size: 48px;
+	}
+	.header-logo-link-laptop,
+	.header-logo-link {
+		width: 320px;
+	}
+	/* ?=============== BIKE SECTION =============== */
+	.bike__text {
+		font-size: 23px;
+	}
+	.bike-column__title {
+		font-size: 28px;
+	}
+	.bike-column__list-item-place {
+		font-size: 24px;
+	}
+	/* ?=============== ANIMATOR SECTION=============== */
+	.animator-list {
+		gap: 12px;
+		flex-wrap: nowrap;
+	}
+	/* ?============= FOTTERR SECTION ========= */
+	.footer-about-discribe {
+		font-size: 17px;
+	}
+	.footer-address-item {
+		font-size: 24px;
+	}
+	.footer-social-discribe {
+		font-size: 17px;
+	}
 }
 /* *******************!1440px < ∞ *******************/
 @media screen and (min-width: 1440px) {
-  /* ---------------UNIVERSAL CLASSES--------------- */
-  .container{
-    max-width: 1410px;
-  }
-  .title {
-    font-size: 52px;
-  }
-  /*  ?  =============== HEDER =======================*/
-  .header-menu-list {
-    gap: 78px;
-  }
-  /* ?=============== BIKE SECTION =============== */
-  .bike__inner {
-    margin-bottom: 36px;
-  }
-  .bike__text {
-    font-size: 32px;
-  }
-  .bike__title {
-    max-width: 700px;
-  }
-  .bike__subtitle {
-    font-size: 36px;
-  }
-  .bike-column__title {
-    font-size: 40px;
-    margin-bottom: 8px;
-  }
-  .bike-column__list-item-place{
-    font-size: 32px;
-  }
-  .bike-column-slider {
-    margin-bottom: 40px;
-  }
-  /* ?============== INFO SECTION ============ */
-  .info__item-text {
-    font-size: 30px;
-  }
-  .footer-title {
-    font-size: 36px;
-  }
-  /* ?============= FOTTER SECTION ========= */
-  .footer-about-discribe {
-    font-size: 20px;
-  }
-  .footer-address-item {
-    font-size: 24px;
-  }
-  .footer-social-discribe {
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-  .footer-social-form-imput {
-    margin-bottom: 20px;
-  }
+	/* ---------------UNIVERSAL CLASSES--------------- */
+	.container {
+		max-width: 1410px;
+	}
+	.title {
+		font-size: 52px;
+	}
+	/*  ?  =============== HEDER =======================*/
+	.header-menu-list {
+		gap: 78px;
+	}
+	/* ?=============== BIKE SECTION =============== */
+	.bike__inner {
+		margin-bottom: 36px;
+	}
+	.bike__text {
+		font-size: 32px;
+	}
+	.bike__title {
+		max-width: 700px;
+	}
+	.bike__subtitle {
+		font-size: 36px;
+	}
+	.bike-column__title {
+		font-size: 40px;
+		margin-bottom: 8px;
+	}
+	.bike-column__list-item-place {
+		font-size: 32px;
+	}
+	.bike-column-slider {
+		margin-bottom: 40px;
+	}
+	/* ?============== INFO SECTION ============ */
+	.info__item-text {
+		font-size: 30px;
+	}
+	.footer-title {
+		font-size: 36px;
+	}
+	/* ?============= FOTTER SECTION ========= */
+	.footer-about-discribe {
+		font-size: 20px;
+	}
+	.footer-address-item {
+		font-size: 24px;
+	}
+	.footer-social-discribe {
+		font-size: 13px;
+		margin-bottom: 8px;
+	}
+	.footer-social-form-imput {
+		margin-bottom: 20px;
+	}
 }
