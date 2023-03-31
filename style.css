@@ -278,8 +278,11 @@ button:is(:focus, :hover) {
 	margin-right: auto;
 }
 .footer-address-item {
-	font-size: 22px;
+	font-size: 25px;
 	text-align: center;
+}
+.footer-address-link {
+padding: 10px 0;
 }
 .footer-about-discribe {
 	font-size: 16px;
@@ -714,6 +717,9 @@ button:is(:focus, :hover) {
 	}
 	.footer-about-discribe {
 		font-size: 14px;
+	}
+	.footer-address-link {
+		padding: 0;
 	}
 	.footer-social {
 		order: 3;
